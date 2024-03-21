@@ -1,0 +1,97 @@
+body {
+	padding: 0;
+	margin: 0;
+	background: rgba(0,0,0,0.8);
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#game {
+	margin: calc((100vh - 600px)/2) auto;
+	border-radius: 25px;
+	height: 600px;
+	width: 800px;
+	position: relative;
+	padding: 0;
+}
+
+@media screen and (min-width: 1920px) and (max-width: 1199px){
+	
+	
+}
+
+.screen-game1 {
+	background: linear-gradient(180deg, rgba(0,190,255,0.4) 0%, rgba(9,154,180,0.15) 94%, rgba(0,0,0,0.4) 95%),
+	url('../img/game-bg1.jpg');
+}
+
+.screen-menu {
+	background: url('../img/menu-bg.jpg');
+}
+
+#startgame {
+	width: 300px;
+	height: 60px;
+	background: none;
+	color: #000;
+	border: 5px solid #000;
+	font-size: 24px;
+	font-weight: bold;
+	font-family: 'Tahoma';
+	border-radius: 20px;
+	position: absolute;
+	bottom: 20px;
+	left: calc((800px - 300px)/2);
+	cursor: pointer;
+	text-transform: uppercase;
+	text-shadow: 0 0 10px #fff;
+	box-shadow: 0 0 5px #fff;
+	transition: all ease-in 150ms;
+	display: none;
+}
+
+#startgame:hover {
+	color: #fff;
+	border-color: #000;
+	background: #000;
+}
+
+.screen-menu #startgame {display: block;}
+
+
+.score,#tooltip {
+	font-size: 24px;
+	font-weight: bold;
+	color: #000;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	text-shadow: 0 0 10px #fff;
+}
+
+#yourscore {
+	bottom: 190px;
+}
+
+#bestscore,#currentscore {
+	top: 20px;
+}
+
+#tooltip {
+	bottom: 100px;
+	font-size: 15px;
+	background: rgba(0,0,0,0.7);
+	color: #fff;
+	text-shadow: none;
+	padding: 10px 0;
+	display: none;
+}
+
+.screen-menu #tooltip {display: block;}
+
+#gameovertext {
+	bottom: 220px;
+	color: red !important;
+	font-size: 30px;
+	font-weight: bold;
+}
